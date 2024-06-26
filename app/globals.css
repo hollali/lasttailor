@@ -52,6 +52,9 @@
 
 
   @layer base {
+    .border-border {
+      border-color: var(--border-color, #000); /* Example custom border color */
+    }
     * {
       @apply border-border;
     }

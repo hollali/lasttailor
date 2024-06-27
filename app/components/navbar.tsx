@@ -66,9 +66,12 @@ export default function Navbar() {
           ></div>
         )}
         <Link href="/">
-          <h1 className="text-2xl md:text-4xl font-bold text-gold">
-            Lasattailor
-          </h1>
+          <div className="flex items-center">
+            <img src="/app/assets/Asset 9.png" alt="Logo" className="h-8 md:h-10" />
+            <h1 className="text-2xl md:text-4xl font-bold text-gold ml-2">
+              Lasattailor
+            </h1>
+          </div>
         </Link>
         <nav className="hidden gap-12 lg:flex 2xl:ml-16">
           {links.map((link, idx) => (

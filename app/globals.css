@@ -1,8 +1,7 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
 
-  
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -28,7 +27,7 @@
   }
 
   .dark {
-    --background: 20 14.3% 4.1%;
+    --background: 20 14.3% 4.1%; /* Dark background color */
     --foreground: 60 9.1% 97.8%;
     --card: 20 14.3% 4.1%;
     --card-foreground: 60 9.1% 97.8%;
@@ -48,17 +47,16 @@
     --input: 12 6.5% 15.1%;
     --ring: 35.5 91.7% 32.9%;
   }
-}
 
-
-  @layer base {
-    .border-border {
-      border-color: var(--border-color, #000); /* Example custom border color */
-    }
-    * {
-      @apply border-border;
-    }
-    body {
-      @apply bg-background text-foreground;
-    }
+  .border-border {
+    border-color: var(--border-color, #000); /* Example custom border color */
   }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

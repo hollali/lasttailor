@@ -53,7 +53,8 @@ const config: Config = {
           foreground: "hsl(var(--card-foreground))",
         },
         // Custom colors based on the image
-        gold: '#D4AF37',
+        gold: '#825C2D',
+        blink: '#F8E07F',
         black: '#000000',
         white: '#FFFFFF',
         gray: {

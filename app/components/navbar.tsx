@@ -7,6 +7,7 @@ import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Button } from "@/components/ui/button";
 import { useShoppingCart } from "use-shopping-cart";
+import Image from "next/image";
 
 const links = [
   { name: "Home", href: "/" },
@@ -22,7 +23,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="mb-8 border-b border-gold bg-black">
+    <header className="mb-0 border-b border-gold bg-black">
       <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
         <button
           className="lg:hidden z-50 p-2 mr-4 rounded-md text-gold"
@@ -43,7 +44,7 @@ export default function Navbar() {
                     <li className="my-4">
                       <Link href={link.href}>
                         <span
-                          className="text-gold hover:text-white"
+                          className="text-gold hover:bg-blink"
                           onClick={() => setIsOpen(false)}
                         >
                           {link.name}
@@ -67,7 +68,6 @@ export default function Navbar() {
         )}
         <Link href="/">
           <div className="flex items-center">
-            <img src="/app/assets/Asset 9.png" alt="Logo" className="h-8 md:h-10" />
             <h1 className="text-2xl md:text-4xl font-bold text-gold ml-2">
               Lasattailor
             </h1>
@@ -86,7 +86,7 @@ export default function Navbar() {
               ) : (
                 <Link
                   href={link.href}
-                  className="text-lg font-semibold text-white transition duration-100 hover:text-gold"
+                  className="text-lg font-semibold text-blink transition duration-100 hover:text-gold"
                 >
                   {link.name}
                 </Link>

@@ -23,7 +23,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="mb-0 border-b border-gold bg-black">
+    <header className="mb-6 border-b border-gold bg-black">
       <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
         <button
           className="lg:hidden z-50 p-2 mr-4 rounded-md text-gold"
